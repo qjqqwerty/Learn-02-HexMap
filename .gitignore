@@ -33,8 +33,6 @@
 
 # Visual Studio cache directory
 .vs/
-# VS Code cache directory
-.vscode/
 
 # Gradle cache directory
 .gradle/
@@ -99,3 +97,11 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# 自定义忽略
+
+# 资源预处理文件夹
+Extras/Img/
+
+# VS Code cache directory
+.vscode/
