@@ -278,10 +278,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayLaboratory
+      name: HexSheetDayCryoBldg
       rect:
         serializedVersion: 2
-        x: 800
+        x: 801
         y: 380
         width: 100
         height: 76
@@ -656,7 +656,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_26
+      name: HexSheetDaySlum
       rect:
         serializedVersion: 2
         x: 0
@@ -677,7 +677,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_27
+      name: HexSheetDaySlumBlackMarket
       rect:
         serializedVersion: 2
         x: 100
@@ -698,7 +698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_28
+      name: HexSheetDayBuildingRuin
       rect:
         serializedVersion: 2
         x: 200
@@ -719,7 +719,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_29
+      name: HexSheetDayCityGate
       rect:
         serializedVersion: 2
         x: 300
@@ -740,7 +740,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_30
+      name: HexSheetDayCityWall_2
       rect:
         serializedVersion: 2
         x: 400
@@ -761,7 +761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_31
+      name: HexSheetDayMetropolis_1
       rect:
         serializedVersion: 2
         x: 500
@@ -782,7 +782,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_32
+      name: HexSheetDayMetropolis_2
       rect:
         serializedVersion: 2
         x: 600
@@ -803,7 +803,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_33
+      name: HexSheetDayMetropolis_3
       rect:
         serializedVersion: 2
         x: 700
@@ -824,7 +824,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_34
+      name: HexSheetDayGrassPathCorner_1
       rect:
         serializedVersion: 2
         x: 800
@@ -845,7 +845,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_35
+      name: HexSheetDayGrassPathCorner_2
       rect:
         serializedVersion: 2
         x: 900
@@ -866,7 +866,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_36
+      name: HexSheetDayGrassPathVertical
       rect:
         serializedVersion: 2
         x: 1000
@@ -887,7 +887,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_37
+      name: HexSheetDayGrassPathHorizontal
       rect:
         serializedVersion: 2
         x: 1100
@@ -908,7 +908,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_38
+      name: HexSheetDayMountainSpring
       rect:
         serializedVersion: 2
         x: 1200
@@ -1202,7 +1202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_52
+      name: HexSheetDayWetland
       rect:
         serializedVersion: 2
         x: 0
@@ -1223,10 +1223,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_53
+      name: HexSheetDayLake
       rect:
         serializedVersion: 2
-        x: 100
+        x: 99
         y: 76
         width: 100
         height: 76
@@ -1244,11 +1244,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_54
+      name: HexSheetDayToxicSwamp
       rect:
         serializedVersion: 2
-        x: 200
-        y: 76
+        x: 201
+        y: 75
         width: 100
         height: 76
       alignment: 0
@@ -1265,7 +1265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_55
+      name: HexSheetDayZomZomsCanteen
       rect:
         serializedVersion: 2
         x: 300
@@ -1286,7 +1286,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_56
+      name: HexSheetDayJungle
       rect:
         serializedVersion: 2
         x: 400
@@ -1307,7 +1307,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_57
+      name: HexSheetDayCave
       rect:
         serializedVersion: 2
         x: 500
@@ -1328,7 +1328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_58
+      name: HexSheetDayAllegan
       rect:
         serializedVersion: 2
         x: 600
@@ -1349,7 +1349,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_59
+      name: HexSheetDayCamp
       rect:
         serializedVersion: 2
         x: 700
@@ -1370,7 +1370,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_60
+      name: HexSheetDayAsylum
       rect:
         serializedVersion: 2
         x: 800
@@ -1391,10 +1391,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_61
+      name: HexSheetDayGrayling
       rect:
         serializedVersion: 2
-        x: 900
+        x: 901
         y: 76
         width: 100
         height: 76
@@ -1759,18 +1759,41 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       HexSheetDayAbandonedBuilding: 883523249
+      HexSheetDayAllegan: 1607828782
+      HexSheetDayAsylum: 1535840935
+      HexSheetDayBuildingRuin: 719800411
+      HexSheetDayCamp: 1904254039
+      HexSheetDayCave: 355365012
+      HexSheetDayCityGate: -217913104
       HexSheetDayCityWall_1: 1626811854
+      HexSheetDayCityWall_2: -417765059
+      HexSheetDayCryoBldg: -1640408841
       HexSheetDayDeepWater: -1426947564
       HexSheetDayDesertedTown: 382710223
       HexSheetDayForest: -406155127
       HexSheetDayForestCabin: -408459836
+      HexSheetDayGrassPathCorner_1: 1277319055
+      HexSheetDayGrassPathCorner_2: -1374255081
+      HexSheetDayGrassPathHorizontal: 967635642
+      HexSheetDayGrassPathVertical: -26541332
       HexSheetDayGrassland: -1150886366
+      HexSheetDayGrayling: 1459017257
       HexSheetDayHills: -895855088
-      HexSheetDayLaboratory: -1640408841
+      HexSheetDayJungle: 313948180
+      HexSheetDayLake: -325664960
+      HexSheetDayMetropolis_1: 2026153529
+      HexSheetDayMetropolis_2: -371411337
+      HexSheetDayMetropolis_3: -385526460
+      HexSheetDayMountainSpring: 1292572840
       HexSheetDaySand: 618316703
       HexSheetDayShallowWater: -1919415198
+      HexSheetDaySlum: 701996043
+      HexSheetDaySlumBlackMarket: -1688537484
       HexSheetDaySnowMountain: -235243270
       HexSheetDayTown: 1729328631
+      HexSheetDayToxicSwamp: -1681052430
+      HexSheetDayWetland: -484900565
+      HexSheetDayZomZomsCanteen: -1700358992
       HexSheetSummerDay_13: -199586046
       HexSheetSummerDay_14: -1188234880
       HexSheetSummerDay_15: 763904106
@@ -1784,19 +1807,6 @@ TextureImporter:
       HexSheetSummerDay_23: -2109395556
       HexSheetSummerDay_24: -338960951
       HexSheetSummerDay_25: -1508382389
-      HexSheetSummerDay_26: 701996043
-      HexSheetSummerDay_27: -1688537484
-      HexSheetSummerDay_28: 719800411
-      HexSheetSummerDay_29: -217913104
-      HexSheetSummerDay_30: -417765059
-      HexSheetSummerDay_31: 2026153529
-      HexSheetSummerDay_32: -371411337
-      HexSheetSummerDay_33: -385526460
-      HexSheetSummerDay_34: 1277319055
-      HexSheetSummerDay_35: -1374255081
-      HexSheetSummerDay_36: -26541332
-      HexSheetSummerDay_37: 967635642
-      HexSheetSummerDay_38: 1292572840
       HexSheetSummerDay_39: -1608931435
       HexSheetSummerDay_40: 1269139159
       HexSheetSummerDay_41: -213864860
@@ -1810,16 +1820,6 @@ TextureImporter:
       HexSheetSummerDay_49: 1614517571
       HexSheetSummerDay_50: -1632569862
       HexSheetSummerDay_51: 626034871
-      HexSheetSummerDay_52: -484900565
-      HexSheetSummerDay_53: -325664960
-      HexSheetSummerDay_54: -1681052430
-      HexSheetSummerDay_55: -1700358992
-      HexSheetSummerDay_56: 313948180
-      HexSheetSummerDay_57: 355365012
-      HexSheetSummerDay_58: 1607828782
-      HexSheetSummerDay_59: 1904254039
-      HexSheetSummerDay_60: 1535840935
-      HexSheetSummerDay_61: 1459017257
       HexSheetSummerDay_62: 1869732655
       HexSheetSummerDay_63: -1176167022
       HexSheetSummerDay_64: 57685696
