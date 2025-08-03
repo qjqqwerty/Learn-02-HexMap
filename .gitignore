@@ -101,7 +101,7 @@ InitTestScene*.unity*
 # 自定义忽略
 
 # 资源预处理文件夹
-Extras/Img/
+Extras/
 
 # VS Code cache directory
 .vscode/

@@ -46,17 +46,21 @@ public enum TerrainSightType
 public enum TerrainExplorationType
 {
     /// <summary>
-    /// 无可探索内容（如纯地形）
+    /// 无内容（如纯地形）
     /// </summary>
     None,
     /// <summary>
-    /// 人造类地形，如村庄、工厂、食堂
+    /// 可搜索区域
+    /// Hex can be scovenged.
+    /// 如小镇、废弃大楼、废弃城市
     /// </summary>
-    Building,
+    CanBeScovenged,
     /// <summary>
+    /// 有物品区域
+    /// has items in it.
     /// 自然类地形，如森林、湖泊、山丘
     /// </summary>
-    Natura,
+    HasItemsInIt,
     /// <summary>
     /// 剧情类地形，触发特殊事件，之后恢复成普通探索
     /// </summary>
