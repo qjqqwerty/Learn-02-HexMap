@@ -31,7 +31,7 @@
 <!-- 第三行 -->
 | 沼泽 | Marsh | HexDay_27_Marsh | marshlands | 沼泽地 |
 | 水源地 | WaterPlains | HexDay_28_WaterPlains | flat grassland with water | 带水的平坦草地 |
-| 巨型黑沼泽 | GreatBlackSwamp | HexDay_29_ToxicSwamp | great black swamp | 巨型黑沼泽 |
+| 巨型黑沼泽 | GreatBlackSwamp | HexDay_29_GreatBlackSwamp | great black swamp | 巨型黑沼泽 |
 | 僵僵食堂 | ZomZoms | HexDay_30_ZomZoms | Zom Zom's, a place to eat | 僵僵食堂 |
 | 异怪森林 | StrangeForest | HexDay_31_StrangeForest | strange forest | 奇怪的森林 |
 | 同位素矿山 | IsotopeMine  | HexDay_32_IsotopeMine | isotope mine | 同位素矿山 |
@@ -39,31 +39,6 @@
 | 部落国 | TribalNation | HexDay_34_TribalNation | Anishinabe Tribal Nation | 印第安部落国 |
 | 精神研究所 | MentalInstitute | HexDay_35_MentalInstitute | Saginaw Mental Institute | 萨吉诺精神研究所 |
 | 格雷林营地 | Grayling | HexDay_36_Grayling | Camp Grayling | 格雷林营地 |
-
-<!-- | 沼泽 | Swamp | HexDay_99_Swamp | -->
-<!-- | 废弃城市 | AbandonedCity | HexDay_99_AbandonedCity | -->
-
-| 14 | tent city | tent city | 帐篷城市 | 帐篷城市 |
-| 15 | tent city bazaar | tent city bazaar | 帐篷城市集市 | 帐篷城市里的集市 |
-| 16 | rubble | piles of rubble from what was a city | 瓦砾堆 | 曾经城市的瓦砾堆 |
-| 17 | megacity gates | megacity gates | 巨型城市大门 | 巨型城市的大门 |
-| 18 | megacity walls SW | megacity walls SW | 巨型城市墙（东南） | 巨型城市的东南围墙 |
-| 19 | megacity walls NW/N | megacity walls NW/N | 巨型城市墙（东北/北） | 巨型城市的东北/北围墙 |
-| 20 | megacity walls NW | megacity walls NW | 巨型城市墙（东北） | 巨型城市的东北围墙 |
-| 21 | megacity midtown | megacity midtown | 巨型城市中心 | 巨型城市的中心区域 |
-| 22 | hill (Clearbone Valley) | hills or foothills | 山丘（清骨谷） | 丘陵或山脚 |
-| 23 | testplains | testflat grassland | 测试平原 | 测试用的平坦草地 |
-| 24 | testplains | testflat grassland | 测试平原 | 测试用的平坦草地 |
-| 25 | testplains | testflat grassland | 测试平原 | 测试用的平坦草地 |
-| 26 | hill (water) | hills or foothills with water | 水丘 | 有水的丘陵 |
-| 27 | marsh | marshlands | 沼泽 | 沼泽地 |
-| 28 | plains (water) | flat grassland with water | 水草原 | 带水的平坦草地 |
-| 29 | great black swamp | Great Black Swamp | 黑大沼泽 | 黑大沼泽 |
-| 30 | Zom Zom's | Zom Zom's, a place to eat | Zom Zom 餐厅 | Zom Zom 的餐馆 |
-| 31 | strange forest | strange forest | 神秘森林 | 奇怪的森林 |
-| 32 | river | flowing river | 河流 | 流动的河流 |
-| 33 | grass | tall grass | 草地 | 高草 |
-| 34 | junk market | junk market | 废品市场 | 废旧物品交易市场 |
-| 35 | trap site | trap site | 陷阱场 | 设置陷阱的地方 |
-| 36 | clear forest | sparse trees | 稀疏林 | 树木稀疏的森林 |
-| 37 | pit trap | large pit with spikes | 陷阱坑 | 带有尖刺的大坑 |
+| 测试平原 | testplains | HexDay_37_Grayling | testflat grassland | 测试用的平坦草地 |
+| 测试平原 | testplains | HexDay_38_Grayling | testflat grassland | 测试用的平坦草地 |
+| 测试平原 | testplains | HexDay_39_Grayling | testflat grassland | 测试用的平坦草地 |

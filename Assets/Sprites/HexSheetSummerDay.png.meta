@@ -110,15 +110,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HexSheetDayDeepWater
+      name: HexDay_01_Ocean
       rect:
         serializedVersion: 2
         x: 0
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,15 +131,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayShallowWater
+      name: HexDay_02_Coast
       rect:
         serializedVersion: 2
         x: 100
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,15 +152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDaySand
+      name: HexDay_03_Sand
       rect:
         serializedVersion: 2
         x: 200
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,15 +173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayGrassland
+      name: HexDay_04_Plains
       rect:
         serializedVersion: 2
         x: 300
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,15 +194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayForest
+      name: HexDay_05_Forest
       rect:
         serializedVersion: 2
         x: 400
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,15 +215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayHills
+      name: HexDay_06_Hill
       rect:
         serializedVersion: 2
         x: 500
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,15 +236,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDaySnowMountain
+      name: HexDay_07_Mountain
       rect:
         serializedVersion: 2
         x: 600
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,15 +257,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayTown
+      name: HexDay_08_SuburbanRuins
       rect:
         serializedVersion: 2
         x: 700
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,15 +278,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayCryoBldg
+      name: HexDay_09_CryoFacility
       rect:
         serializedVersion: 2
         x: 801
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,15 +299,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayAbandonedBuilding
+      name: HexDay_10_SkyscraperRuins
       rect:
         serializedVersion: 2
         x: 900
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,15 +320,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayForestCabin
+      name: HexDay_11_ForestShack
       rect:
         serializedVersion: 2
         x: 1000
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,15 +341,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayDesertedTown
+      name: HexDay_12_UrbanRuins
       rect:
         serializedVersion: 2
         x: 1100
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,15 +362,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayCityWall_1
+      name: HexDay_13_MegacityWallsN
       rect:
         serializedVersion: 2
         x: 1200
         y: 380
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -656,15 +656,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDaySlum
+      name: HexDay_14_TentCity
       rect:
         serializedVersion: 2
         x: 0
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -677,15 +677,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDaySlumBlackMarket
+      name: HexDay_15_TentCityBazaar
       rect:
         serializedVersion: 2
         x: 100
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -698,15 +698,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayBuildingRuin
+      name: HexDay_16_Rubble
       rect:
         serializedVersion: 2
         x: 200
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -719,15 +719,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayCityGate
+      name: HexDay_17_MegacityGates
       rect:
         serializedVersion: 2
         x: 300
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -740,15 +740,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayCityWall_2
+      name: HexDay_18_MegacityWallsSW
       rect:
         serializedVersion: 2
         x: 400
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -761,15 +761,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayMetropolis_1
+      name: HexDay_19_MegacityWallsNWN
       rect:
         serializedVersion: 2
         x: 500
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -782,15 +782,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayMetropolis_2
+      name: HexDay_20_MegacityWallsNW
       rect:
         serializedVersion: 2
         x: 600
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -803,15 +803,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayMetropolis_3
+      name: HexDay_21_MegacityMidtown
       rect:
         serializedVersion: 2
         x: 700
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -824,15 +824,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayGrassPathCorner_1
+      name: HexDay__GrassPathCorner_1
       rect:
         serializedVersion: 2
         x: 800
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -845,15 +845,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayGrassPathCorner_2
+      name: HexDay__GrassPathCorner_2
       rect:
         serializedVersion: 2
         x: 900
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -866,15 +866,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayGrassPathVertical
+      name: HexDay__GrassPathVertical
       rect:
         serializedVersion: 2
         x: 1000
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -887,15 +887,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayGrassPathHorizontal
+      name: HexDay__GrassPathHorizontal
       rect:
         serializedVersion: 2
         x: 1100
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -908,15 +908,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayMountainSpring
+      name: HexDay_26_WaterHill
       rect:
         serializedVersion: 2
         x: 1200
         y: 228
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1202,15 +1202,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayWetland
+      name: HexDay_27_Marsh
       rect:
         serializedVersion: 2
         x: 0
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1223,15 +1223,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayLake
+      name: HexDay_28_WaterPlains
       rect:
         serializedVersion: 2
         x: 99
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1244,7 +1244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayToxicSwamp
+      name: HexDay_29_GreatBlackSwamp
       rect:
         serializedVersion: 2
         x: 201
@@ -1265,15 +1265,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayZomZomsCanteen
+      name: HexDay_30_ZomZoms
       rect:
         serializedVersion: 2
         x: 300
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1286,15 +1286,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayJungle
+      name: HexDay_31_StrangeForest
       rect:
         serializedVersion: 2
         x: 400
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1307,15 +1307,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayCave
+      name: HexDay_22_ClearboneValleyHill
       rect:
         serializedVersion: 2
         x: 500
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1328,15 +1328,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayAllegan
+      name: HexDay_33_Fairgrounds
       rect:
         serializedVersion: 2
         x: 600
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1349,15 +1349,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayCamp
+      name: HexDay_34_TribalNation
       rect:
         serializedVersion: 2
         x: 700
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1370,15 +1370,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayAsylum
+      name: HexDay_35_MentalInstitute
       rect:
         serializedVersion: 2
         x: 800
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1391,15 +1391,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetDayGrayling
+      name: HexDay_36_Grayling
       rect:
         serializedVersion: 2
         x: 901
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1412,15 +1412,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_62
+      name: HexDay_37_Grayling
       rect:
         serializedVersion: 2
         x: 1000
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1433,15 +1433,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_63
+      name: HexDay_38_Grayling
       rect:
         serializedVersion: 2
         x: 1100
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1454,15 +1454,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HexSheetSummerDay_64
+      name: HexDay_39_Grayling
       rect:
         serializedVersion: 2
         x: 1200
         y: 76
         width: 100
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1758,42 +1758,45 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HexSheetDayAbandonedBuilding: 883523249
-      HexSheetDayAllegan: 1607828782
-      HexSheetDayAsylum: 1535840935
-      HexSheetDayBuildingRuin: 719800411
-      HexSheetDayCamp: 1904254039
-      HexSheetDayCave: 355365012
-      HexSheetDayCityGate: -217913104
-      HexSheetDayCityWall_1: 1626811854
-      HexSheetDayCityWall_2: -417765059
-      HexSheetDayCryoBldg: -1640408841
-      HexSheetDayDeepWater: -1426947564
-      HexSheetDayDesertedTown: 382710223
-      HexSheetDayForest: -406155127
-      HexSheetDayForestCabin: -408459836
-      HexSheetDayGrassPathCorner_1: 1277319055
-      HexSheetDayGrassPathCorner_2: -1374255081
-      HexSheetDayGrassPathHorizontal: 967635642
-      HexSheetDayGrassPathVertical: -26541332
-      HexSheetDayGrassland: -1150886366
-      HexSheetDayGrayling: 1459017257
-      HexSheetDayHills: -895855088
-      HexSheetDayJungle: 313948180
-      HexSheetDayLake: -325664960
-      HexSheetDayMetropolis_1: 2026153529
-      HexSheetDayMetropolis_2: -371411337
-      HexSheetDayMetropolis_3: -385526460
-      HexSheetDayMountainSpring: 1292572840
-      HexSheetDaySand: 618316703
-      HexSheetDayShallowWater: -1919415198
-      HexSheetDaySlum: 701996043
-      HexSheetDaySlumBlackMarket: -1688537484
-      HexSheetDaySnowMountain: -235243270
-      HexSheetDayTown: 1729328631
-      HexSheetDayToxicSwamp: -1681052430
-      HexSheetDayWetland: -484900565
-      HexSheetDayZomZomsCanteen: -1700358992
+      HexDay_01_Ocean: -1426947564
+      HexDay_02_Coast: -1919415198
+      HexDay_03_Sand: 618316703
+      HexDay_04_Plains: -1150886366
+      HexDay_05_Forest: -406155127
+      HexDay_06_Hill: -895855088
+      HexDay_07_Mountain: -235243270
+      HexDay_08_SuburbanRuins: 1729328631
+      HexDay_09_CryoFacility: -1640408841
+      HexDay_10_SkyscraperRuins: 883523249
+      HexDay_11_ForestShack: -408459836
+      HexDay_12_UrbanRuins: 382710223
+      HexDay_13_MegacityWallsN: 1626811854
+      HexDay_14_TentCity: 701996043
+      HexDay_15_TentCityBazaar: -1688537484
+      HexDay_16_Rubble: 719800411
+      HexDay_17_MegacityGates: -217913104
+      HexDay_18_MegacityWallsSW: -417765059
+      HexDay_19_MegacityWallsNWN: 2026153529
+      HexDay_20_MegacityWallsNW: -371411337
+      HexDay_21_MegacityMidtown: -385526460
+      HexDay_22_ClearboneValleyHill: 355365012
+      HexDay_26_WaterHill: 1292572840
+      HexDay_27_Marsh: -484900565
+      HexDay_28_WaterPlains: -325664960
+      HexDay_29_GreatBlackSwamp: -1681052430
+      HexDay_30_ZomZoms: -1700358992
+      HexDay_31_StrangeForest: 313948180
+      HexDay_33_Fairgrounds: 1607828782
+      HexDay_34_TribalNation: 1904254039
+      HexDay_35_MentalInstitute: 1535840935
+      HexDay_36_Grayling: 1459017257
+      HexDay_37_Grayling: 1869732655
+      HexDay_38_Grayling: -1176167022
+      HexDay_39_Grayling: 57685696
+      HexDay__GrassPathCorner_1: 1277319055
+      HexDay__GrassPathCorner_2: -1374255081
+      HexDay__GrassPathHorizontal: 967635642
+      HexDay__GrassPathVertical: -26541332
       HexSheetSummerDay_13: -199586046
       HexSheetSummerDay_14: -1188234880
       HexSheetSummerDay_15: 763904106
@@ -1820,9 +1823,6 @@ TextureImporter:
       HexSheetSummerDay_49: 1614517571
       HexSheetSummerDay_50: -1632569862
       HexSheetSummerDay_51: 626034871
-      HexSheetSummerDay_62: 1869732655
-      HexSheetSummerDay_63: -1176167022
-      HexSheetSummerDay_64: 57685696
       HexSheetSummerDay_65: 821014665
       HexSheetSummerDay_66: 406218924
       HexSheetSummerDay_67: 478810183
