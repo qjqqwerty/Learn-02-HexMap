@@ -252,10 +252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "\u4E0D\u53EF\u9009Sprite": {fileID: 0}
-  "\u53EF\u9009Sprite": {fileID: 0}
   Sprite: {fileID: 21300000, guid: 0544907bff4848d428044ba2151cdb38, type: 3}
-  tileWidth: 1.06
-  tileHeight: 0.39
+  config: {fileID: 11400000, guid: d0db4169d05f549429092474e787bed4, type: 2}
 --- !u!212 &440536530
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -598,8 +596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e647d8caed7d16439af73a0b11f2af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  W: 1
-  H: 0.4
+  config: {fileID: 11400000, guid: d0db4169d05f549429092474e787bed4, type: 2}
   player: {fileID: 0}
   playerQR: {x: 0, y: 0}
 --- !u!1 &1775659175
@@ -645,6 +642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1798982209}
   - component: {fileID: 1798982208}
+  - component: {fileID: 1798982210}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -660,7 +658,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798982207}
   m_Enabled: 1
-  m_CellSize: {x: 0.39, y: 1.06, z: 1}
+  m_CellSize: {x: 0.39, y: 1.06, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 1
   m_CellSwizzle: 2
@@ -680,6 +678,19 @@ Transform:
   - {fileID: 1921435993}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1798982210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798982207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1208a5683683de4b8a2bdb3541aa1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  config: {fileID: 11400000, guid: d0db4169d05f549429092474e787bed4, type: 2}
 --- !u!1 &1921435992
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,23 +5,32 @@ using UnityEngine;
 /// </summary>
 public static class HexUtils
 {
-    // 六边形尺寸（半宽 s = width / 2）
-    public static float s = 0.53f;          // tileWidth / 2
-    public static float tileHeight = 0.39f; // tileHeight
-    public static float scaleY = (Mathf.Sqrt(3f) * s) / tileHeight;
+    // 六边形尺寸
+    private static HexMapConfig config;
+
+    public static void Init(HexMapConfig cfg)
+    {
+        config = cfg;
+    }
 
     /// <summary>
     /// 世界坐标 → axial 坐标并四舍五入到最近瓦片
     /// </summary>
     public static Vector2Int WorldToAxialRound(Vector2 world)
     {
+        float s = config.S;
+        float scaleY = config.ScaleY;
+
         float x = world.x;
         float y = world.y;
         float yPrime = y * scaleY;
 
         float qf = (2f / 3f) * x / s;
         float rf = (-1f / 3f) * x / s - (1f / Mathf.Sqrt(3f)) * yPrime / s;
-        Debug.Log($"Fractional q, r: {qf}, {rf}");
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log($"Fractional q, r: {qf}, {rf}");
+        }
 
         return CubeRound_Axial(qf, rf);
     }
@@ -29,7 +38,7 @@ public static class HexUtils
     /// <summary>
     /// cube 坐标四舍五入到最近整数 axial 坐标
     /// </summary>
-    public static Vector2Int CubeRound_Axial(float qf, float rf)
+    private static Vector2Int CubeRound_Axial(float qf, float rf)
     {
         float xf = qf;
         float zf = rf;
@@ -58,6 +67,9 @@ public static class HexUtils
     /// </summary>
     public static Vector2 AxialToWorld(Vector2Int hex)
     {
+        float s = config.S;
+        float tileHeight = config.tileHeight;
+
         int q = hex.x;
         int r = hex.y;
 

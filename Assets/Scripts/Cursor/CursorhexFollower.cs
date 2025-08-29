@@ -2,19 +2,19 @@ using UnityEngine;
 
 public class TileCursorFollower : MonoBehaviour
 {
-    [SerializeField] private Sprite 不可选Sprite; // 图片1
-    [SerializeField] private Sprite 可选Sprite;   // 图片2
+    [SerializeField] private Sprite 不可选Sprite; // 不可选图片
     [SerializeField] private Sprite Sprite; // 可选图片
-    [SerializeField] private float tileWidth = 1.06f;     // 平顶六边形宽
-    [SerializeField] private float tileHeight = 0.39f;    // 平顶六边形高
+
+    // 六边形参数（平顶）
+    [SerializeField] private HexMapConfig config; // 引用 HexMapConfig.asset
 
     private float s;       // 六边形长
     private float scaleY;  // y 归一化系数
 
     private void Start()
     {
-        s = tileWidth / 2f;                   // 半宽
-        scaleY = (Mathf.Sqrt(3f) * s) / tileHeight;
+        float s = config.S;             // 半宽
+        float scaleY = config.ScaleY;   // 3/4 * width = 3/2 * s = (sqrt(3)*s)/H
     }
 
     private void Update()
@@ -23,6 +23,7 @@ public class TileCursorFollower : MonoBehaviour
         Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorld.z = 0f;
 
+        
         // 转换为六边形坐标
         Vector2Int hex = HexUtils.WorldToAxialRound(mouseWorld);
 

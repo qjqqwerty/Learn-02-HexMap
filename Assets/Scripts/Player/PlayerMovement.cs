@@ -3,22 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
     [Header("六边形参数（平顶）")]
+
     // 六边形宽高
-    public float W = 1.1f;
-    // 六边形高度 (非规则六边形)
-    public float H = 0.39f;
+    [SerializeField] private HexMapConfig config;
+
     // 玩家对象
     public Transform player;
 
     // 当前玩家所在格（轴坐标）
     public Vector2Int playerQR = new Vector2Int(0, 0);
-
-    // 预计算
-    float s;        // = W/2
-    float scaleY;   // = (sqrt(3)*s)/H
+    // 主摄像机
     Camera cam;
 
     // Awake()：只在对象加载时调用一次
@@ -31,8 +29,10 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         cam = Camera.main;
-        s = W * 0.5f;
-        scaleY = (Mathf.Sqrt(3f) * s) / H;
+        float s = config.S;             // 半宽
+        float scaleY = config.ScaleY;   // 3/4 * width = 3/2 * s = (sqrt(3)*s)/H
+        // HexUtils 初始 六边形工具类
+        HexUtils.Init(config);
     }
 
     // // 玩家移动速度
