@@ -251,9 +251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cd68595ee2e85145b0e125cdc928c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "\u4E0D\u53EF\u9009Sprite": {fileID: 0}
-  Sprite: {fileID: 21300000, guid: 0544907bff4848d428044ba2151cdb38, type: 3}
+  "\u4E0D\u53EF\u9009Sprite": {fileID: 21300000, guid: f12e77c840ad89c41abc633617f0a1c9, type: 3}
+  "\u53EF\u9009Sprite": {fileID: 21300000, guid: 0544907bff4848d428044ba2151cdb38, type: 3}
   config: {fileID: 11400000, guid: d0db4169d05f549429092474e787bed4, type: 2}
+  playerTransform: {fileID: 1562400231}
 --- !u!212 &440536530
 SpriteRenderer:
   m_ObjectHideFlags: 0
