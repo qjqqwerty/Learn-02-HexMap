@@ -77,4 +77,16 @@ public static class HexUtils
         float y = -tileHeight / (Mathf.Sqrt(3f) * s) * Mathf.Sqrt(3f) * s * (r + q / 2f);
         return new Vector2(x, y);
     }
+
+    /// <summary>
+    /// 计算两个 axial 坐标的六边形距离
+    /// 返回值为 0 表示同一格，1 表示相邻格，依此类推
+    /// </summary>
+    public static int HexDistance(Vector2Int a, Vector2Int b)
+    {
+        int dq = a.x - b.x;
+        int dr = a.y - b.y;
+        int ds = -a.x - a.y + b.x + b.y; // cube 坐标 z 差
+        return (Mathf.Abs(dq) + Mathf.Abs(dr) + Mathf.Abs(ds)) / 2;
+    }
 }
