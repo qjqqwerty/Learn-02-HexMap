@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform player;
 
     // 当前玩家所在格（轴坐标）
-    public Vector2Int playerQR = new Vector2Int(0, 0);
+    public Vector2Int playerQR;
     // 主摄像机
     Camera cam;
 
@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         float scaleY = config.ScaleY;   // 3/4 * width = 3/2 * s = (sqrt(3)*s)/H
         // HexUtils 初始 六边形工具类
         HexUtils.Init(config);
+        playerQR = new(0, 0);
     }
 
     // // 玩家移动速度
@@ -54,29 +55,48 @@ public class PlayerMovement : MonoBehaviour
         // 鼠标点击
         if (Input.GetMouseButtonDown(0))
         {
-            // 1) 计算世界坐标 屏幕鼠标位置 → 世界坐标
+            // 1) 获取 屏幕鼠标位置 (世界坐标)
             Vector3 mws = cam.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mouseWorld = new(mws.x, mws.y);
             Debug.Log($"Mouse Position: {mouseWorld}");
 
-            // 世界→轴坐标(四舍五入到最近格)
-            // 立方体舍入：把(qf, rf)转为最邻近的整数(q, r)
-            // Vector2 clickQR = WorldToAxialRound(mouseWorld);
+            // 光标世界坐标→轴坐标(立方体舍入到最近格)
+            // 计算鼠标点击处轴坐标, 立方体舍入：把(qf, rf)转为最邻近的整数(q, r)
             Vector2Int clickQR = HexUtils.WorldToAxialRound(mouseWorld, true);
-            // Debug.Log($"Rounded q, r: {clickQR.x}, {clickQR.y}");
 
-            // 计算移动方向
+            // 移动处理
+            // 获取玩家位置
             Vector2 playerPos = new(this.transform.position.x, this.transform.position.y);
-            Vector2 velocity = (mouseWorld - playerPos);
-            Debug.Log($"Mouse Position: {mouseWorld}, Player Position: {playerPos}, Rounded q, r: {clickQR}");
+            // 输出日志 (鼠标的世界坐标, 玩家的世界坐标, 鼠标的轴坐标)
+            Debug.Log($"鼠标的世界坐标: {mouseWorld}, 玩家的世界坐标: {playerPos}, 鼠标的轴坐标: {clickQR}");
 
-            // 计算 q
+            if (HexUtils.HexDistance(playerQR, clickQR) <= 1)
+            {
+                // 4) 目标格中心点（世界坐标）
+                // 4) 鼠标的轴坐标 → 鼠标所在格中心点的世界坐标
+                Vector2 target = HexUtils.AxialToWorld(clickQR);
 
-            // int q = (int)Math.Round(0.75 * mouseWorld.x / W);
-            // int r = (int)Math.Round((mouseWorld.y - (q % 2) * H / 2.0) / H);
-            // Debug.Log($"qr Position: {q}, {r}");
+                // 自身格点击：额外提示
+                if (clickQR == playerQR)
+                {
+                    Debug.Log("这里是当前");
+                }
 
-
+                // 5) 更新玩家位置
+                // 5) 移动（示例：瞬移；你也可以改成协程/Lerp）
+                if (player != null)
+                {
+                    player.position = new Vector3(target.x, target.y, player.position.z);
+                }
+                // 6) 更新玩家所在格坐标
+                playerQR = clickQR;
+                Debug.Log($"玩家移动到格子: {playerQR}");
+            }
+            else
+            {
+                // 非自身/邻格：忽略或提示
+                Debug.Log("目标格子距离太远，无法移动");
+            }
 
         }
     }
