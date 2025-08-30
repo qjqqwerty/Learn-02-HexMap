@@ -16,7 +16,7 @@ public static class HexUtils
     /// <summary>
     /// 世界坐标 → axial 坐标并四舍五入到最近瓦片
     /// </summary>
-    public static Vector2Int WorldToAxialRound(Vector2 world)
+    public static Vector2Int WorldToAxialRound(Vector2 world, bool printLog = false)
     {
         float s = config.S;
         float scaleY = config.ScaleY;
@@ -27,7 +27,7 @@ public static class HexUtils
 
         float qf = (2f / 3f) * x / s;
         float rf = (-1f / 3f) * x / s - (1f / Mathf.Sqrt(3f)) * yPrime / s;
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && printLog)
         {
             Debug.Log($"Fractional q, r: {qf}, {rf}");
         }

@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
             // 世界→轴坐标(四舍五入到最近格)
             // 立方体舍入：把(qf, rf)转为最邻近的整数(q, r)
             // Vector2 clickQR = WorldToAxialRound(mouseWorld);
-            Vector2Int clickQR = HexUtils.WorldToAxialRound(mouseWorld);
+            Vector2Int clickQR = HexUtils.WorldToAxialRound(mouseWorld, true);
             // Debug.Log($"Rounded q, r: {clickQR.x}, {clickQR.y}");
 
             // 计算移动方向

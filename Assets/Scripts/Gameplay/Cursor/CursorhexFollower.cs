@@ -11,6 +11,7 @@ public class TileCursorFollower : MonoBehaviour
     [SerializeField] private Transform playerTransform;     // 玩家角色 Transform
 
     private SpriteRenderer spriteRenderer;
+    Camera cam;
 
     private void Awake()
     {
@@ -22,13 +23,14 @@ public class TileCursorFollower : MonoBehaviour
         /// sortingLayer / orderInLayer：渲染顺序
         /// </summary>
         spriteRenderer = GetComponent<SpriteRenderer>();
+        cam = Camera.main;
     }
 
     private void Update()
     {
         // 获取鼠标世界坐标
-        Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorld.z = 0f;
+        Vector3 mws = cam.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mouseWorld = new(mws.x, mws.y);
 
         // 转换为最近六边形坐标
         Vector2Int mouseHex = HexUtils.WorldToAxialRound(mouseWorld);
