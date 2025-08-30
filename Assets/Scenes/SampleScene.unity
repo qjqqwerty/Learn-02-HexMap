@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 335387410}
   - component: {fileID: 335387411}
   m_Layer: 0
-  m_Name: CreItmHospitalGown
+  m_Name: PlayerWearableBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,7 +510,7 @@ GameObject:
   - component: {fileID: 1562400230}
   - component: {fileID: 1562400232}
   m_Layer: 0
-  m_Name: Person
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
