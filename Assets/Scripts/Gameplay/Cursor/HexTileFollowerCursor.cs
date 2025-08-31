@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TileCursorFollower : MonoBehaviour
+public class HexTileFollowerCursor : MonoBehaviour
 {
     [SerializeField] private Sprite 不可选Sprite; // 不可选图片
     [SerializeField] private Sprite 可选Sprite;   // 可选图片

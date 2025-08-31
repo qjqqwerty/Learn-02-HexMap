@@ -92,26 +92,18 @@ ProjectRoot/
 
 ### 图层排序
 <!-- #region Sorting Layer (排序图层) -->
-| Layer Name | Sorting | 描述 |
-|  ----  | ----  | ----  |
-| Default | 0 | 默认 |
-| TileMap | 1 | 瓦片地图 |
-| CharLook_HandheldR | 3 | 人物右手持物外观 |
-| CharLook_Shoulder | 4 | 人物肩部外观 |
-| CharLook_Backpacks | 4 | 人物背包外观 |
-| CharModel | 5 | 人物模型 |
-| CharLook_Foot | 6 | 人物脚部外观 |
-| CharLook_Face | 6 | 人物脸部外观 |
-| CharLook_LowerBody | 7 | 人物下身外观 |
-| CharLook_Eye | 7 | 人物眼部外观 |
-| CharLook_UpperBody | 8 | 人物上身外观 |
-| CharLook_Hat | 8 | 人物头盔外观 |
-| CharLook_Sash | 9 | 人物腰部外观 |
-| CharLook_Overcoat | 10 | 人物外套外观 |
-| CharLook_HandheldL | 11 | 人物左手持物外观 |
-| ScavHint | 12 | 拾荒信息提示（是否可探索是否存在物品） |
-| NPCMark | 12 | 行踪标记 |
-| WeatherStatus | 13 | 天气状态 |
-| TileHint | 14 | 瓦片提示信息 |
-| CursorDetail | 15 | 光标悬停处详情 |
+| Sorting | Layer Name | 描述 |
+| ---- | ---- | ---- |
+| 00 | Default | 默认 |
+| 01 | TileMap | 瓦片地图 |
+| 02 | Null | 待定 |
+| 03 | TileScavHint | 拾荒信息: <br> 1. 是否可探索 <br>&emsp; 是否存在物品 <br>&emsp; 行踪标记 (NPCMark) <br>&emsp; 地块高亮追踪器 (HexTileHilightFollowerCursor) |
+| 04 | Null | 待定 |
+| 05 | CharLookModel | 人物外观模型:<br> 1. 人物右手持物外观(CharLook_HandheldR) <br> 2. 人物肩部外观 (CharLook_Shoulder) <br>&emsp; 人物背包外观 (CharLook_Backpacks) <br> 3. 人物模型 (CharModel) <br> 4. 人物脚部外观 (CharLook_Foot) <br>&emsp; 人物脸部外观 (CharLook_Face) <br> 5. 人物下身外观 (CharLook_LowerBody) <br>&emsp; 人物眼部外观 (CharLook_Eye) <br> 6. 人物上身外观 (CharLook_UpperBody) <br>&emsp; 人物头盔外观 (CharLook_Hat) <br> 7. 人物肩部外观 (CharLook_Sash) <br> 8. 人物腰部外观 (CharLook_Overcoat) <br> 9. 人物左手持物外观 (CharLook_HandheldL) |
+| 06 | Null | 待定 |
+| 07 | TileMapHint | 地块: <br> 1. 地标标记 (TileTags) |
+| 09 | Null | 待定 |
+| 11 | UI | UI界面 <br> 1. 天气状态 (UIWeatherStatus) <br> 2. 鼠标悬停处瓦片提示信息 (UITileHint) |
+| 13 | Null | 待定 |
+| 15 | Cursor | 鼠标光标: <br> 1. 鼠标光标皮肤 (CursorSkin) <br> 2. 光标悬停处详情 (CursorDetail)|
 <!-- #endregion -->

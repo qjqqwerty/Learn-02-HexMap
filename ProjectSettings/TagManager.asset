@@ -41,3 +41,48 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: TileMap
+    uniqueID: 277386051
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 2050106767
+    locked: 0
+  - name: TileScavHint
+    uniqueID: 1801125373
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 3616022565
+    locked: 0
+  - name: CharLookModel
+    uniqueID: 3742189025
+    locked: 0
+  - name: New Layer 6
+    uniqueID: 1797239345
+    locked: 0
+  - name: New Layer 7
+    uniqueID: 1815373251
+    locked: 0
+  - name: New Layer 8
+    uniqueID: 2121867161
+    locked: 0
+  - name: New Layer 9
+    uniqueID: 2651282183
+    locked: 0
+  - name: New Layer 10
+    uniqueID: 631100663
+    locked: 0
+  - name: New Layer 11
+    uniqueID: 1715749679
+    locked: 0
+  - name: New Layer 12
+    uniqueID: 1337877989
+    locked: 0
+  - name: New Layer 13
+    uniqueID: 3808244701
+    locked: 0
+  - name: New Layer 14
+    uniqueID: 2239395761
+    locked: 0
+  - name: Cursor
+    uniqueID: 3051459687
+    locked: 0
