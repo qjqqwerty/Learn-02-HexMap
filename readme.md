@@ -118,7 +118,7 @@ Scripts/                        # 所有 C# 脚本
 │   
 ├── Gameplay/                   # 逻辑相关 (鼠标、玩家、地图)
 │   ├── Cursor/                 # 光标相关
-│   │   ├── CursorhexFollower.cs # MonoBehaviour 类 定义 跟随当前鼠标位置的六边形边框 以当前鼠标光标所在 瓦片(Tile) 中心为中心
+│   │   ├── CursorhexFollower.cs # MonoBehaviour 类 定义 鼠标跟随框 以标光标所在 六边形瓦片中心点 为中心
 │   │   ├── CustomCursor.cs     # MonoBehaviour 类 定义 修改鼠标光标的图案
 │   │
 │   ├── Player/                 # Player逻辑脚本
