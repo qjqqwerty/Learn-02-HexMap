@@ -56,7 +56,7 @@ Data/
 ├── Palettes/                           # 平铺调色板 (Tile Palette)
 │   ├── Hex Palette                     # 调色板 (预制件资产)
 │
-├── Sprites/                            # 精灵（2D 图片）
+├── Image/                              # 图片
 │   ├── Cursor/                         # 光标相关
 │   │   │
 │   │   ├── HexHilight.png              # 鼠标位置是 可选瓦片 时的图片
@@ -80,8 +80,19 @@ Data/
 │   │   │   │   ├── CanShoulder/        # 可肩背
 │   │   │   │   └── Handheld/           # 手持装备
 │   │   │   ├── CreItm_7_Foot/          # 脚本装备 (Costume Item Foot)
+│   │
+│   ├── Sprites/                        # 精灵（2D 图片）
+│   │   ├── ……
+│   │   └── Person                      # 玩家图片
+│   │
+│   └── TilesImg/                       # 瓦片原图
+│       ├── HexDay_00_Blank             # 白天黑幕
+│       ├── HexSheetSummerDay           # 白天地块图集
+│       ├── ……
+│       └── HexSheetSummerNight         # 夜晚地块图集
 │
 │── Tiles/                              # 瓦片
+│   ├── HexDay_00_Blank                 # 未知瓦片
 │   ├── HexDay_01_Ocean                 # 深海瓦片
 │   ├── HexDay_02……36                   # 其他地形瓦片
 ……
