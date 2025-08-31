@@ -69,18 +69,16 @@ public class PlayerMovement : MonoBehaviour
             Vector2 playerPos = new(this.transform.position.x, this.transform.position.y);
             // 输出日志 (鼠标的世界坐标, 玩家的世界坐标, 鼠标的轴坐标)
             Debug.Log($"鼠标的世界坐标: {mouseWorld}, 玩家的世界坐标: {playerPos}, 鼠标的轴坐标: {clickQR}");
+            // 2) 计算玩家所在格到鼠标点击格的距离
+            int distance = HexUtils.HexDistance(playerQR, clickQR);
 
-            if (HexUtils.HexDistance(playerQR, clickQR) <= 1)
+            // 3) 判断是否可达
+            bool isTileReachable = HexUtils.CanPlayerMoveToTile(distance);
+            if (isTileReachable)
             {
                 // 4) 目标格中心点（世界坐标）
                 // 4) 鼠标的轴坐标 → 鼠标所在格中心点的世界坐标
                 Vector2 target = HexUtils.AxialToWorld(clickQR);
-
-                // 自身格点击：额外提示
-                if (clickQR == playerQR)
-                {
-                    Debug.Log("这里是当前");
-                }
 
                 // 5) 更新玩家位置
                 // 5) 移动（示例：瞬移；你也可以改成协程/Lerp）
@@ -91,6 +89,11 @@ public class PlayerMovement : MonoBehaviour
                 // 6) 更新玩家所在格坐标
                 playerQR = clickQR;
                 Debug.Log($"玩家移动到格子: {playerQR}");
+            }
+            else if (HexUtils.HexDistance(playerQR, clickQR) == 0)
+            {
+                // 自身格点击：额外提示
+                Debug.Log("这里是当前格子");
             }
             else
             {

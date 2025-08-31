@@ -38,8 +38,10 @@ public class HexTileFollowerCursor : MonoBehaviour
 
         // 计算 玩家 到 鼠标光标 的六边形中心的距离
         int distance = HexUtils.HexDistance(playerHex, mouseHex);
+        // 判断是否可达
+        bool isTileReachable = HexUtils.CanPlayerMoveToTile(distance);
         // 根据距离切换 Sprite
-        if (distance == 1)
+        if (isTileReachable)
             spriteRenderer.sprite = 可选Sprite;
         else
             spriteRenderer.sprite = 不可选Sprite;

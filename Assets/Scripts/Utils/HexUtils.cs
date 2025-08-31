@@ -89,4 +89,22 @@ public static class HexUtils
         int ds = -a.x - a.y + b.x + b.y; // cube 坐标 z 差
         return (Mathf.Abs(dq) + Mathf.Abs(dr) + Mathf.Abs(ds)) / 2;
     }
+
+    public static bool CanPlayerMoveToTile(int distance)
+    {
+        // 1. 距离为0（角色所在瓦片）或超过1格不可移动
+        if (distance == 0 || distance > 1)
+            return false;
+        
+        // // 2. 瓦片不可通行
+        // if (!targetTile.canPass)
+        //     return false;
+
+        // // 3. 行动力不足
+        // if (targetTile.cost > remainingAP)
+        //     return false;
+
+        // 满足条件，格子可移动
+        return true;
+    }
 }
