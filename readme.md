@@ -10,8 +10,8 @@ ProjectRoot/
 │
 <!-- #region Assets (根目录) -->
 ├── Assets/                             # Unity 主目录
-<!-- #region Library (库) -->
-│   ├── Library/                        # 库
+<!-- #region Data (数据) -->
+│   ├── Data/                           # 数据
 │   │   ├── Configs/                    # 配置文件
 │   │   │   ├── HexMapConfig.asset      # 六边形参数配置文件
 │   │   │
