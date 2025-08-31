@@ -12,6 +12,13 @@ ProjectRoot/
 ├── Assets/                             # Unity 主目录
 <!-- #region Data (数据) -->
 │   ├── Data/                           # 数据
+│   │   ├── Audio/
+│   │   │   ├── BGM/                    # 背景音乐
+│   │   │   │   ├── …….mp3
+│   │   │   │   └── …….mp3
+│   │   │   ├── SFX/                    # 音效
+│   │   │   │   ├── …….wav
+│   │   │
 │   │   ├── Configs/                    # 配置文件
 │   │   │   ├── HexMapConfig.asset      # 六边形参数配置文件
 │   │   │
