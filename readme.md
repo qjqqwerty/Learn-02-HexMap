@@ -3,97 +3,122 @@
 作者也很羞涩不知道说什么
 
 ---
+### 目录结构
+#### 根目录
 
-### 目录机构
-<!-- #region 目录机构 -->
+``` test
 ProjectRoot/
-│
-<!-- #region Assets (根目录) -->
-├── Assets/                             # Unity 主目录
-<!-- #region Data (数据) -->
-│   ├── Data/                           # 数据
-│   │   ├── Audio/
-│   │   │   ├── BGM/                    # 背景音乐
-│   │   │   │   ├── …….mp3
-│   │   │   │   └── …….mp3
-│   │   │   ├── SFX/                    # 音效
-│   │   │   │   ├── …….wav
-│   │   │
-│   │   ├── Configs/                    # 配置文件
-│   │   │   ├── HexMapConfig.asset      # 六边形参数配置文件
-│   │   │
-│   │   ├── Palettes/                   # 平铺调色板 (Tile Palette)
-│   │   │   ├── Hex Palette             # 调色板 (预制件资产)
-│   │   │
-│   │   ├── Sprites/                    # 精灵（2D 图片）
-│   │   │   ├── Cursor/                 # 光标相关
-│   │   │   │   ├── HexHilight.png      # 鼠标位置是 可选瓦片 时的图片
-│   │   │   │   ├── HexHilightInvalid.png # 鼠标位置是 不可选瓦片 时的图片
-│   │   │   │   ├── x2_CurDefault.png   # 游戏地图页面 鼠标光标图片
-│   │   │   │   ├── x2…….png            # 其他鼠标光标图片
-│   │   │   │
-<!-- #region Iteams (游戏内物料) -->
-│   │   │   ├── Iteams/                 # 游戏内物料
-│   │   │   │   ├── CharLook /            # 人物服饰外观 (Character Costume Look)
-│   │   │   │   │   ├── CreItm_0_Hat/         # 头部装备 (Costume Item Hat)
-│   │   │   │   │   │   ├── Hat/              # 头部
-│   │   │   │   │   │   ├── Face/             # 面部
-│   │   │   │   │   │   └── Eye/              # 眼部
-│   │   │   │   │   ├── CreItm_1_UpperBody/   # 上身装备 (Costume Item UpperBody)
-│   │   │   │   │   ├── CreItm_2_LowerBody/   # 下身装备 (Costume Item LowerBody)
-│   │   │   │   │   ├── CreItm_3_Overcoat/    # 外套装备 (Costume Item Overcoat)
-│   │   │   │   │   ├── CreItm_4_Backpacks/   # 包类装备 (Costume Item BackpacksLike)
-│   │   │   │   │   ├── CreItm_5_Sash/        # 腰部装备 (Costume Item Sash)
-│   │   │   │   │   ├── CreItm_6_Held/        # 持有装备 (Costume Item Held)
-│   │   │   │   │   │   ├── CanShoulder/      # 可肩背
-│   │   │   │   │   │   └── Handheld/         # 手持装备
-│   │   │   │   │   ├── CreItm_7_Foot/        # 脚本装备 (Costume Item Foot)
-<!-- #endregion -->
-│   │   │
-│   │   │── Tiles/                      # 瓦片
-│   │   │   ├── HexDay_01_Ocean         # 深海瓦片
-│   │   │   ├── HexDay_02……36           # 其他地形瓦片
-<!-- #endregion -->
-│   │
-<!-- #region Scenes (场景) -->
-│   ├── Scenes/                         # Unity 场景
-│   │   ├── SampleScene.unity           # 示例场景 (TODO)
-<!-- #endregion -->
-│   │
-<!-- #region Scripts (脚本) -->
-│   ├── Scripts/                        # 所有 C# 脚本
-│   │   ├── Configs/                    # 配置相关
-│   │   │   ├── HexMapConfig.cs         # ScriptableObject 类 生成 六边形参数的配置文件
-│   │   │   ├── GridController.cs       # MonoBehaviour 类 定义 根据配置文件控制 Grid 对象
-│   │   │
-│   │   ├── Data/                       # 数据相关 (枚举、结构体、常量)
-│   │   │   └── Enums/                  # 枚举相关
-│   │   │       └── TerrainEnums.cs     # 地形枚举 (TODO)
-│   │   │   
-│   │   ├── Gameplay/                   # 逻辑相关 (鼠标、玩家、地图)
-│   │   │   ├── Cursor/                 # 光标相关
-│   │   │   │   ├── CursorhexFollower.cs # MonoBehaviour 类 定义 跟随当前鼠标位置的六边形边框 以当前鼠标光标所在 瓦片(Tile) 中心为中心
-│   │   │   │   ├── CustomCursor.cs     # MonoBehaviour 类 定义 修改鼠标光标的图案
-│   │   │   │
-│   │   │   ├── Player/                 # Player逻辑脚本
-│   │   │   │   ├── PlayerMovement.cs   # 玩家移动逻辑
-│   │   │   │
-│   │   │   ├── Tiles/                  # 瓦片脚本
-│   │   │   │   ├── TerrainTile.cs      # 瓦片地形类 (TODO)
-│   │   │
-│   │   ├── Utils/                      # 工具类
-│   │   │   ├── HexUtils.cs         # 六边形工具箱函数 (计算距离、计算位置)
-<!-- #endregion -->
-│   │
-│   └── Prefabs/                 # 预制件
-│       ├── Player.prefab
-│       ├── TileCursor.prefab
-<!-- #endregion -->
+├── Assets/                      # Unity 主目录
 │
 └── Extras/                      # 额外素材（Unity 未加载 && 通过 .gitignore 忽略 不会上传）
     ├── Img/                     # 参考图片/美术资源
-    ├── Audio/                   # 原始音效素材
-<!-- #endregion -->
+    └── Audio/                   # 原始音效素材
+```
+
+#### Unity 主目录
+
+``` test
+Assets/
+│
+├── Data/                       # 数据
+│   ├── Audio/                  # 音频文件 (TODO)
+│   ├── Configs/                # 配置文件
+│   ├── Palettes/               # 平铺调色板 (Tile Palette)
+│   ├── Prefabs/                # 预制件 (TODO)
+│   ├── Sprites/                # 精灵（2D 图片）
+│   └── Tiles/                  # 瓦片
+│
+├── Scenes/                     # Unity 场景
+│
+└── Scripts/                    # 所有 C# 脚本
+    ├── Configs/                # 配置相关
+    ├── Definitions/            # 数据定义 
+    ├── Gameplay/               # 逻辑相关
+    ├── ……
+    └── Utils/                  # 工具类
+```
+
+
+#### 数据目录详情
+
+``` test
+Data/ 
+├── Audio/                              # 音频文件
+│   ├── BGM/                            # 背景音乐
+│   │   ├── …….mp3
+│   │   └── …….mp3
+│   ├── SFX/                            # 音效
+│   │   ├── …….wav
+│
+├── Configs/                            # 配置文件
+│   ├── HexMapConfig.asset              # 六边形参数配置文件
+│
+├── Palettes/                           # 平铺调色板 (Tile Palette)
+│   ├── Hex Palette                     # 调色板 (预制件资产)
+│
+├── Sprites/                            # 精灵（2D 图片）
+│   ├── Cursor/                         # 光标相关
+│   │   │
+│   │   ├── HexHilight.png              # 鼠标位置是 可选瓦片 时的图片
+│   │   ├── HexHilightInvalid.png       # 鼠标位置是 不可选瓦片 时的图片
+│   │   ├── x2_CurDefault.png           # 游戏地图页面 鼠标光标图片
+│   │   ├── x2…….png                    # 其他鼠标光标图片
+│   │
+│   ├── Iteams/                         # 游戏内物料
+│   │   │
+│   │   ├── CharLook /                  # 人物服饰外观 (Character Costume Look)
+│   │   │   ├── CreItm_0_Hat/           # 头部装备 (Costume Item Hat)
+│   │   │   │   ├── Hat/                # 头部
+│   │   │   │   ├── Face/               # 面部
+│   │   │   │   └── Eye/                # 眼部
+│   │   │   ├── CreItm_1_UpperBody/     # 上身装备 (Costume Item UpperBody)
+│   │   │   ├── CreItm_2_LowerBody/     # 下身装备 (Costume Item LowerBody)
+│   │   │   ├── CreItm_3_Overcoat/      # 外套装备 (Costume Item Overcoat)
+│   │   │   ├── CreItm_4_Backpacks/     # 包类装备 (Costume Item BackpacksLike)
+│   │   │   ├── CreItm_5_Sash/          # 腰部装备 (Costume Item Sash)
+│   │   │   ├── CreItm_6_Held/          # 持有装备 (Costume Item Held)
+│   │   │   │   ├── CanShoulder/        # 可肩背
+│   │   │   │   └── Handheld/           # 手持装备
+│   │   │   ├── CreItm_7_Foot/          # 脚本装备 (Costume Item Foot)
+│
+│── Tiles/                              # 瓦片
+│   ├── HexDay_01_Ocean                 # 深海瓦片
+│   ├── HexDay_02……36                   # 其他地形瓦片
+……
+```
+
+#### 场景目录详情
+
+``` test
+Scenes/                         # Unity 场景(TODO)
+└── SampleScene.unity           # 示例场景 地图 (Map)
+```
+
+#### 脚本目录详情
+``` test
+Scripts/                        # 所有 C# 脚本
+├── Configs/                    # 配置相关
+│   ├── HexMapConfig.cs         # ScriptableObject 类 生成 六边形参数的配置文件
+│   ├── GridController.cs       # MonoBehaviour 类 定义 根据配置文件控制 Grid 对象
+│
+├── Definitions/                # 数据定义 (枚举、结构体、常量)
+│   └── Enums/                  # 枚举相关
+│       └── TerrainEnums.cs     # 地形枚举 (TODO)
+│   
+├── Gameplay/                   # 逻辑相关 (鼠标、玩家、地图)
+│   ├── Cursor/                 # 光标相关
+│   │   ├── CursorhexFollower.cs # MonoBehaviour 类 定义 跟随当前鼠标位置的六边形边框 以当前鼠标光标所在 瓦片(Tile) 中心为中心
+│   │   ├── CustomCursor.cs     # MonoBehaviour 类 定义 修改鼠标光标的图案
+│   │
+│   ├── Player/                 # Player逻辑脚本
+│   │   ├── PlayerMovement.cs   # 玩家移动逻辑
+│   │
+│   ├── Tiles/                  # 瓦片脚本
+│   │   ├── TerrainTile.cs      # 瓦片地形类 (TODO)
+│
+├── Utils/                      # 工具类
+│   ├── HexUtils.cs         # 六边形工具箱函数 (计算距离、计算位置)
+```
 
 ---
 
