@@ -28,7 +28,8 @@ Assets/
 │
 ├── Resources/                  # 加载资源 (完整打进游戏包里)
 │   ├── Audio/                  # 音频文件 (TODO)
-│   ├── Data/                   # 数据文件
+│   ├── Configs/                # 配置文件 (可调)
+│   ├── Data/                   # 常量数据文件
 │   ├── Prefabs/                # 预制件 (TODO)
 │   └── Sprites/                # 贴图
 │
@@ -70,9 +71,10 @@ Resources/
 │   ├── SFX/                            # 音效
 │   │   ├── …….wav
 │
+├── Configs/                            # 配置文件
+│   ├── HexMapConfig.asset              # 六边形参数配置文件
+│
 ├── Data/                               # 游戏数据
-│   ├── Configs/                        # 配置文件
-│   │   ├── HexMapConfig.asset          # 六边形参数配置文件
 │
 ├── Prefabs/                            # 预制体
 │   ├── ……/ 
