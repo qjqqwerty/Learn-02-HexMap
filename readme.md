@@ -1,6 +1,6 @@
 ## 欢迎来的这个开源项目
 
-这是作者一边学习 Unity, 一边复刻多年前一款 flash 游戏的项目
+这是作者一边学习Unity, 一边复刻多年前一款 flash 游戏的项目
 
 作者也很羞涩不知道说什么
 
@@ -22,13 +22,15 @@ ProjectRoot/
 ``` test
 Assets/
 │
-├── Data/                       # 数据
-│   ├── Audio/                  # 音频文件 (TODO)
-│   ├── Configs/                # 配置文件
+├── Editor/                     # 编辑器 (不打包)
 │   ├── Palettes/               # 平铺调色板 (Tile Palette)
-│   ├── Prefabs/                # 预制件 (TODO)
-│   ├── Sprites/                # 精灵（2D 图片）
 │   └── Tiles/                  # 瓦片
+│
+├── Resources/                  # 加载资源 (完整打进游戏包里)
+│   ├── Audio/                  # 音频文件 (TODO)
+│   ├── Data/                   # 数据文件
+│   ├── Prefabs/                # 预制件 (TODO)
+│   └── Sprites/                # 贴图
 │
 ├── Scenes/                     # Unity 场景
 │
@@ -41,10 +43,26 @@ Assets/
 ```
 
 
-#### 数据目录详情
+#### 编辑器工具详情
 
 ``` test
-Data/ 
+Editor/ 
+│
+├── Palettes/                           # 平铺调色板 (Tile Palette)
+│   └── Hex Palette                     # 调色板 (预制件资产)
+│
+└── Tiles/                              # 瓦片
+    ├── HexDay_00_Blank                 # 未知瓦片
+    ├── HexDay_01_Ocean                 # 深海瓦片
+    ├── ……
+    └── HexDay_02……36                   # 其他地形瓦片
+……
+```
+
+#### 资源目录详情
+
+``` test
+Resources/ 
 ├── Audio/                              # 音频文件
 │   ├── BGM/                            # 背景音乐
 │   │   ├── …….mp3
@@ -52,22 +70,26 @@ Data/
 │   ├── SFX/                            # 音效
 │   │   ├── …….wav
 │
-├── Configs/                            # 配置文件
-│   ├── HexMapConfig.asset              # 六边形参数配置文件
+├── Data/                               # 游戏数据
+│   ├── Configs/                        # 配置文件
+│   │   ├── HexMapConfig.asset          # 六边形参数配置文件
 │
-├── Palettes/                           # 平铺调色板 (Tile Palette)
-│   ├── Hex Palette                     # 调色板 (预制件资产)
+├── Prefabs/                            # 预制体
+│   ├── ……/ 
+│   │   ├── ……
 │
-├── Image/                              # 图片
+├── Sprites/                            # 贴图
+│   ├── Characters/                     # 角色贴图
+│   │   ├── ……
+│   │   └── Person                      # 玩家贴图
+│   │
 │   ├── Cursor/                         # 光标相关
-│   │   │
 │   │   ├── HexHilight.png              # 鼠标位置是 可选瓦片 时的图片
 │   │   ├── HexHilightInvalid.png       # 鼠标位置是 不可选瓦片 时的图片
 │   │   ├── x2_CurDefault.png           # 游戏地图页面 鼠标光标图片
 │   │   ├── x2…….png                    # 其他鼠标光标图片
 │   │
 │   ├── Iteams/                         # 游戏内物料
-│   │   │
 │   │   ├── CharLook /                  # 人物服饰外观 (Character Costume Look)
 │   │   │   ├── CreItm_0_Hat/           # 头部装备 (Costume Item Hat)
 │   │   │   │   ├── Hat/                # 头部
@@ -83,20 +105,11 @@ Data/
 │   │   │   │   └── Handheld/           # 手持装备
 │   │   │   ├── CreItm_7_Foot/          # 脚本装备 (Costume Item Foot)
 │   │
-│   ├── Sprites/                        # 精灵（2D 图片）
-│   │   ├── ……
-│   │   └── Person                      # 玩家图片
-│   │
-│   └── TilesImg/                       # 瓦片原图
+│   └── TilesSprites/                   # 瓦片贴图
 │       ├── HexDay_00_Blank             # 白天黑幕
 │       ├── HexSheetSummerDay           # 白天地块图集
 │       ├── ……
 │       └── HexSheetSummerNight         # 夜晚地块图集
-│
-│── Tiles/                              # 瓦片
-│   ├── HexDay_00_Blank                 # 未知瓦片
-│   ├── HexDay_01_Ocean                 # 深海瓦片
-│   ├── HexDay_02……36                   # 其他地形瓦片
 ……
 ```
 
