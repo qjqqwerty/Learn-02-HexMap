@@ -168,3 +168,5 @@ Scripts/                        # 所有 C# 脚本
 | 13 | Null | 待定 |
 | 15 | Cursor | 鼠标光标: <br> 1. 鼠标光标皮肤 (CursorSkin) <br> 2. 光标悬停处详情 (CursorDetail)|
 <!-- #endregion -->
+
+### [学习笔记](md/learn.md)
