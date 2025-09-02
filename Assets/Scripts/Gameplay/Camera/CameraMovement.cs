@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-
-    public float 键盘移动速度 = 3; // 键盘移动相机速度
-    public float 鼠标移动速度 = 0.07f; // 鼠标移动相机速度
+    [SerializeField] private CameraConfig config;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +26,7 @@ public class CameraMovement : MonoBehaviour
 
         Vector2 direction = new(x, y);
 
-        transform.Translate(direction * 键盘移动速度 * Time.deltaTime);
+        transform.Translate(direction * config.键盘移动速度 * Time.deltaTime);
     }
 
     // 鼠标右键拖动
@@ -39,7 +37,7 @@ public class CameraMovement : MonoBehaviour
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
 
-            transform.Translate(new Vector3(mouseX, mouseY, 0)* 鼠标移动速度, Space.Self);
+            transform.Translate(new Vector3(mouseX, mouseY, 0)* config.鼠标移动速度, Space.Self);
         }
     }
 }
