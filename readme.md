@@ -12,7 +12,9 @@
 ProjectRoot/
 ├── Assets/                      # Unity 主目录
 │
-└── Extras/                      # 额外素材（Unity 未加载 && 通过 .gitignore 忽略 不会上传）
+├── Docs/                        # 文档目录
+│
+└── Extras/                      # 额外素材（Unity 未加载 && 通过 当前 .gitignore 忽略 不会上传 发布测试版后会上传 ）
     ├── Img/                     # 参考图片/美术资源
     └── Audio/                   # 原始音效素材
 ```
@@ -29,7 +31,7 @@ Assets/
 ├── Resources/                  # 加载资源 (完整打进游戏包里)
 │   ├── Audio/                  # 音频文件 (TODO)
 │   ├── Configs/                # 配置文件 (可调)
-│   ├── Data/                   # 常量数据文件
+│   ├── Data/                   # 静态数据
 │   ├── Prefabs/                # 预制件 (TODO)
 │   └── Sprites/                # 贴图
 │
@@ -37,6 +39,7 @@ Assets/
 │
 └── Scripts/                    # 所有 C# 脚本
     ├── Configs/                # 配置相关
+    ├── Data/                   # 静态数据
     ├── Definitions/            # 数据定义 
     ├── Gameplay/               # 逻辑相关
     ├── ……
@@ -74,7 +77,7 @@ Resources/
 ├── Configs/                            # 配置文件
 │   ├── HexMapConfig.asset              # 六边形参数配置文件
 │
-├── Data/                               # 游戏数据
+├── Data/                               # 静态数据
 │
 ├── Prefabs/                            # 预制体
 │   ├── ……/ 
@@ -124,31 +127,35 @@ Scenes/                         # Unity 场景(TODO)
 
 #### 脚本目录详情
 ``` test
-Scripts/                        # 所有 C# 脚本
-├── Configs/                    # 配置相关
-│   ├── HexMapConfig.cs         # ScriptableObject 类 生成 六边形参数的配置文件
-│   ├── GridController.cs       # MonoBehaviour 类 定义 根据配置文件控制 Grid 对象
+Scripts/                                # 所有 C# 脚本
+├── Configs/                            # 配置相关
+│   ├── HexMapConfig.cs                 # ScriptableObject 类 生成 六边形参数的配置文件
+
 │
-├── Definitions/                # 数据定义 (枚举、结构体、常量)
-│   └── Enums/                  # 枚举相关
-│       └── TerrainEnums.cs     # 地形枚举 (TODO)
-│   
-├── Gameplay/                   # 逻辑相关 (鼠标、玩家、地图)
-│   ├── Camera/                 # 相机相关
-│   │   ├── CameraMovement.cs   # 相机移动逻辑
-│   │
-│   ├── Cursor/                 # 光标相关
-│   │   ├── CursorhexFollower.cs # MonoBehaviour 类 定义 鼠标跟随框 以标光标所在 六边形瓦片中心点 为中心
-│   │   ├── CustomCursor.cs     # MonoBehaviour 类 定义 修改鼠标光标的图案
-│   │
-│   ├── Player/                 # Player逻辑脚本
-│   │   ├── PlayerMovement.cs   # 玩家移动逻辑
-│   │
-│   ├── Tiles/                  # 瓦片脚本
-│   │   ├── TerrainTile.cs      # 瓦片地形类 (TODO)
+├── Data/                               # 静态数据
+│   ├── MenuCreateAsset/                # 在编辑器的脚本 创建 .asset 菜单
+│   │   ├── GridController.cs           # MonoBehaviour 类 定义 根据配置文件控制 Grid 对象
 │
-├── Utils/                      # 工具类
-│   ├── HexUtils.cs         # 六边形工具箱函数 (计算距离、计算位置)
+├── Definitions/                        # 数据定义 (枚举、结构体、常量)
+│   └── Enums/                          # 枚举相关
+│       └── TerrainEnums.cs             # 地形枚举 (TODO)
+│
+├── Gameplay/                           # 逻辑相关 (鼠标、玩家、地图)
+│   ├── Camera/                         # 相机相关
+│   │   ├── CameraMovement.cs           # 相机移动逻辑
+│   │
+│   ├── Cursor/                         # 光标相关
+│   │   ├── CursorhexFollower.cs        # 鼠标跟随框 (MonoBehaviour 类)
+│   │   ├── CustomCursor.cs             # 修改鼠标光标的图案 (MonoBehaviour)
+│   │
+│   ├── Player/                         # Player逻辑脚本
+│   │   ├── PlayerMovement.cs           # 玩家移动逻辑
+│   │
+│   ├── Tiles/                          # 瓦片脚本
+│   │   ├── TerrainTile.cs              # 瓦片地形类 (TODO)
+│
+├── Utils/                              # 工具类
+│   ├── HexUtils.cs                     # 六边形工具箱函数 (计算距离、计算位置)
 ```
 
 ---
@@ -171,4 +178,4 @@ Scripts/                        # 所有 C# 脚本
 | 15 | Cursor | 鼠标光标: <br> 1. 鼠标光标皮肤 (CursorSkin) <br> 2. 光标悬停处详情 (CursorDetail)|
 <!-- #endregion -->
 
-### [学习笔记](md/learn.md)
+### [学习笔记](Docs/learn.md)

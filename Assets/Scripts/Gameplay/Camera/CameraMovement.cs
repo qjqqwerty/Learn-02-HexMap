@@ -6,7 +6,7 @@ public class CameraMovement : MonoBehaviour
 {
 
     public float 键盘移动速度 = 3; // 键盘移动相机速度
-    public float 鼠标移动速度 = 0.2f; // 鼠标移动相机速度
+    public float 鼠标移动速度 = 0.07f; // 鼠标移动相机速度
     // Start is called before the first frame update
     void Start()
     {
