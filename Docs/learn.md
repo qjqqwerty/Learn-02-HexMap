@@ -17,8 +17,11 @@
    7. 函数、变量的多处复用和统一规划
    8. 控制游戏对象移动
    9. 对象移动其他控制方式
-   10. 六边形地图制作
-   11. 游戏时间 UI
+   10.  制作UI按钮
+   11.  制作UI
+   12. 游戏时间 UI
+   13.  制作(暗黑类)背包
+   14. 六边形地图制作
 
 3. [Unity 项目课程](#chapter3)
    1. 2D《植物大战僵尸》siki老师
@@ -48,12 +51,16 @@
 7. [函数、变量的多处复用和统一规划](ai/多处复用_函数和变量如果统一规划.md)
 8. [控制游戏对象移动](https://www.bilibili.com/video/BV1MDBXYPEst)
 9. [对象移动其他控制方式](ai/对象移动其他控制方式.md)
-10. [Unity 六边形地图制作](https://www.bilibili.com/video/BV1v94y1t7C4/)
-11. [Unity 游戏时间 UI](https://www.bilibili.com/video/BV1NE421G7)
+10. [UI的制作一个按钮](https://www.bilibili.com/video/BV16o4y1w7U5/)
+11. [卡片槽背景Ul模版](https://www.bilibili.com/video/BV1hE421N7V1/?p=5&t=435)
+12. [Unity 游戏时间 UI](https://www.bilibili.com/video/BV1NE421G7)
+13. [用Unity制作塔科夫的背包](https://www.bilibili.com/video/BV1UW4y1t7q8/)
+14. [Unity 六边形地图制作](https://www.bilibili.com/video/BV1v94y1t7C4/)
 
 
 #### 项目课程{#chapter3}
 [《Unity版星露谷物语》siki老师](https://www.bilibili.com/video/BV1MDBXYPEst/)
+[《三天学完-植物大战僵尸》siki老师](https://www.bilibili.com/video/BV1hE421N7V1)
 [《勇士传说》横版动作类游戏开发教程｜Unity 入门到进阶｜4K](https://www.bilibili.com/video/BV1zY411B7KH/)
 [《勇士传说》Unity2022版教程](https://www.bilibili.com/video/BV1mL411o77x/)
 

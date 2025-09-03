@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CustomCursor : MonoBehaviour
+public class CustomCursorOld : MonoBehaviour
 {
     // Start is called before the first frame update
     // 普通光标
