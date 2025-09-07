@@ -21,7 +21,7 @@ public class CustomCursor : MonoBehaviour
         // 鼠标按下切换贴图
         if (Input.GetMouseButtonDown(0))
         {
-            Cursor.visible = false;  
+            Cursor.visible = false;
             _skinImage.sprite = 按下光标;
         }
         if (Input.GetMouseButtonUp(0))
