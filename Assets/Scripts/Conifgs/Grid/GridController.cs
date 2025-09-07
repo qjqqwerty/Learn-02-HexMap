@@ -36,12 +36,17 @@ public class GridController : MonoBehaviour
         // 如果 config 仍然存在，订阅事件并应用配置
         if (config != null)
         {
+#if UNITY_EDITOR
             // 订阅配置文件的 OnConfigChanged 事件
             // 这样当 HexMapConfig 的值改变时，会自动触发 ApplyConfigToGrid()
             config.OnConfigChanged += ApplyConfigToGridDelayed;
-
-            // 初始化时立刻延迟应用一次配置，保证 Grid 和配置同步
             ApplyConfigToGridDelayed();
+
+#else
+            // 初始化时立刻延迟应用一次配置，保证 Grid 和配置同步
+            config.OnConfigChanged += ApplyConfigToGrid;
+            ApplyConfigToGrid();
+#endif
         }
     }
 
@@ -52,7 +57,11 @@ public class GridController : MonoBehaviour
     private void OnDisable()
     {
         if (config != null)
+#if UNITY_EDITOR
             config.OnConfigChanged -= ApplyConfigToGridDelayed;
+#else
+            config.OnConfigChanged -= ApplyConfigToGrid;
+#endif
     }
 
     /// <summary>
