@@ -19,10 +19,11 @@
    9. 对象移动其他控制方式
    10.  制作UI按钮
    11.  UI自适应分辨率
-   12.  制作UI模板
-   13. 游戏时间 UI
-   14.  制作(暗黑类)背包
-   15. 六边形地图制作
+   12.  光标高亮Button时来回闪烁
+   13.  制作UI模板
+   14. 游戏时间 UI
+   15.  制作(暗黑类)背包
+   16. 六边形地图制作
 
 3. [Unity 项目课程](#chapter3)
    1. 2D《植物大战僵尸》siki老师
@@ -54,10 +55,11 @@
 9. [对象移动其他控制方式](ai/对象移动其他控制方式.md)
 10. [UI的制作一个按钮](https://www.bilibili.com/video/BV16o4y1w7U5/)
 11. [Unity教程：如何让UI自适应分辨率](https://www.bilibili.com/video/BV1AFvTzFEbG/)
-12. [卡片槽背景Ul模版](https://www.bilibili.com/video/BV1hE421N7V1/?p=5&t=435)
-13. [Unity 游戏时间 UI](https://www.bilibili.com/video/BV1NE421G7)
-14. [用Unity制作塔科夫的背包](https://www.bilibili.com/video/BV1UW4y1t7q8/)
-15. [Unity 六边形地图制作](https://www.bilibili.com/video/BV1v94y1t7C4/)
+12. [解决光标高亮Button来回闪烁](ai/解决光标高亮Button来回闪烁.md)
+13. [卡片槽背景Ul模版](https://www.bilibili.com/video/BV1hE421N7V1/?p=5&t=435)
+14. [Unity 游戏时间 UI](https://www.bilibili.com/video/BV1NE421G7)
+15. [用Unity制作塔科夫的背包](https://www.bilibili.com/video/BV1UW4y1t7q8/)
+16. [Unity 六边形地图制作](https://www.bilibili.com/video/BV1v94y1t7C4/)
 
 
 #### 项目课程{#chapter3}

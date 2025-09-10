@@ -34,7 +34,7 @@ public class CustomCursor : MonoBehaviour
             _skinImage.sprite = 普通光标;
         }
 
-        // 光标跟随鼠标
+        // 光标跟随鼠标位置（UI 用屏幕坐标）
         transform.position = Input.mousePosition;
     }
 
