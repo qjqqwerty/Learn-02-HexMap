@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;  // 必须引入才能用 EventSystem
 
 
 public class PlayerMovement : MonoBehaviour
@@ -36,18 +37,6 @@ public class PlayerMovement : MonoBehaviour
         playerQR = new(0, 0);
     }
 
-    // // 玩家移动速度
-    // private Vector2 velocity;
-    // // 移动方向 
-    // private Vector3 direction;
-    // // 六边形地图格子宽度
-    // private float width = 1f; 
-    // // 六边形地图格子高度
-    // private float height = 0.4f; 
-
-    // // 是否有移动
-    // private bool hasMove;
-
 
     // Update 会在游戏运行的每一帧都执行一次
     void Update()
@@ -55,6 +44,13 @@ public class PlayerMovement : MonoBehaviour
         // 鼠标点击
         if (Input.GetMouseButtonDown(0))
         {
+            // ① 判断是否点击在 UI 上
+            if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+            {
+                Debug.Log("点击在 UI 上，忽略 TileMap 逻辑");
+                return; // 阻止继续执行
+            }
+            
             // 1) 获取 屏幕鼠标位置 (世界坐标)
             Vector3 mws = cam.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mouseWorld = new(mws.x, mws.y);
