@@ -45,10 +45,27 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             // ① 判断是否点击在 UI 上
-            if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+            // 用于保存被点击到的 UI
+            List<RaycastResult> results = new List<RaycastResult>();
+
+            // 构造当前点击的 pointer 数据
+            PointerEventData data = new PointerEventData(EventSystem.current);
+            data.position = Input.mousePosition;
+
+            // 对所有 UI 进行检测
+            EventSystem.current.RaycastAll(data, results);
+
+            if (results.Count > 0)
             {
-                Debug.Log("点击在 UI 上，忽略 TileMap 逻辑");
-                return; // 阻止继续执行
+                Debug.Log("点击到了 UI 元素：");
+
+                foreach (var r in results)
+                {
+                    Debug.Log(" → " + r.gameObject.name);
+                }
+
+                // 最前面的 UI（真正挡住你的那个）
+                Debug.Log("最前方挡住你的 UI 是：" + results[0].gameObject.name);
             }
             
             // 1) 获取 屏幕鼠标位置 (世界坐标)
