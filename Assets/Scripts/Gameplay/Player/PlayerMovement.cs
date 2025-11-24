@@ -58,14 +58,32 @@ public class PlayerMovement : MonoBehaviour
             if (results.Count > 0)
             {
                 Debug.Log("点击到了 UI 元素：");
+                GameObject blockingUI = null;
 
                 foreach (var r in results)
                 {
                     Debug.Log(" → " + r.gameObject.name);
+                    var graphic = r.gameObject.GetComponent<UnityEngine.UI.Graphic>();
+                    if (graphic != null && graphic.raycastTarget)
+                    {
+                        blockingUI = r.gameObject;
+                        break; // 找到最上层阻挡的 UI
+                    }
                 }
 
                 // 最前面的 UI（真正挡住你的那个）
                 Debug.Log("最前方挡住你的 UI 是：" + results[0].gameObject.name);
+
+                if (blockingUI != null)
+                {
+                    Debug.Log("被阻挡，挡住你的 UI 是：" + blockingUI.name);
+                    return; // 阻止 Tilemap 继续执行
+                }
+                else
+                {
+                    Debug.Log("没有可阻挡 UI");
+                    // 继续 Tilemap 逻辑
+                }
             }
             
             // 1) 获取 屏幕鼠标位置 (世界坐标)

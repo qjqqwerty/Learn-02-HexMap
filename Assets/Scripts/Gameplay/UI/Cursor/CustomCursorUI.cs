@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;   // 引入 UI 命名空间
 
-public class CustomCursor : MonoBehaviour
+public class CustomCursorUI : MonoBehaviour
 {
     [Header("光标贴图")]
     [SerializeField] private Sprite 普通光标;
