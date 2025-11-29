@@ -169,7 +169,7 @@ Scripts/                                # 所有 C# 脚本
 ---
 
 ### 图层
-#### 排序排序
+#### 排序图层
 | Sorting | Layer Name | 描述 |
 | ---- | ---- | ---- |
 | 00 | Default | 默认 |
@@ -183,7 +183,7 @@ Scripts/                                # 所有 C# 脚本
 | 09 | Null | 待定 |
 | 10 | Null | 待定 |
 
-#### 图层
+#### 图层排序 (优先级高)
     0. Default
     1. TransparentFX
     2. lgnore Raycast
