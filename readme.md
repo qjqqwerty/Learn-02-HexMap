@@ -28,22 +28,30 @@ Assets/
 │   ├── Palettes/               # 平铺调色板 (Tile Palette)
 │   └── Tiles/                  # 瓦片
 │
+├── Prefabs/                    # 拖引用 预制件
+│   └── UI/
+│
 ├── Resources/                  # 加载资源 (完整打进游戏包里)
 │   ├── Audio/                  # 音频文件 (TODO)
 │   ├── Configs/                # 配置文件 (可调)
 │   ├── Data/                   # 静态数据
+│   ├── Fonts/                  # 字体
 │   ├── Prefabs/                # 预制件 (TODO)
 │   └── Sprites/                # 贴图
 │
 ├── Scenes/                     # Unity 场景
 │
-└── Scripts/                    # 所有 C# 脚本
-    ├── Configs/                # 配置相关
-    ├── Data/                   # 静态数据
-    ├── Definitions/            # 数据定义 
-    ├── Gameplay/               # 逻辑相关
-    ├── ……
-    └── Utils/                  # 工具类
+│── Scripts/                    # 所有 C# 脚本
+│   ├── Configs/                # 配置相关
+│   ├── Data/                   # 静态数据
+│   ├── Definitions/            # 数据定义 
+│   ├── Gameplay/               # 逻辑相关
+│   │   ├── ……
+│   │   └── Managers/           # 游戏控制
+│   ├── ……
+│   └── Utils/                  # 工具类
+│
+└── Tests/           # 单元测试、编辑器测试
 ```
 
 
@@ -160,8 +168,8 @@ Scripts/                                # 所有 C# 脚本
 
 ---
 
-### 图层排序
-<!-- #region Sorting Layer (排序图层) -->
+### 图层
+#### 排序排序
 | Sorting | Layer Name | 描述 |
 | ---- | ---- | ---- |
 | 00 | Default | 默认 |
@@ -173,9 +181,18 @@ Scripts/                                # 所有 C# 脚本
 | 06 | Null | 待定 |
 | 07 | TileMapHint | 地块: <br> 1. 地标标记 (TileTags) |
 | 09 | Null | 待定 |
-| 11 | UI | UI界面 <br> 1. 天气状态 (UIWeatherStatus) <br> 2. 鼠标悬停处瓦片提示信息 (UITileHint) |
-| 13 | Null | 待定 |
-| 15 | Cursor | 鼠标光标: <br> 1. 鼠标光标皮肤 (CursorSkin) <br> 2. 光标悬停处详情 (CursorDetail)|
-<!-- #endregion -->
+| 10 | Null | 待定 |
+
+#### 图层
+    0. Default
+    1. TransparentFX
+    2. lgnore Raycast
+    4. Water
+    5. UI
+     5.1 MainUI
+      5.1.1 RightUI
+      5.1.1 LeftUI
+     5.2 CanvasCursorUI
+    6. Cursor图层
 
 ### [学习笔记](Docs/learn.md)
