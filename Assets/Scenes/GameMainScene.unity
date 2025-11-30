@@ -259,21 +259,6 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &162199344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162199337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8906cc7f269388f4cb0a58fb8a7ea9c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items:
-  - key: 110
-    ui: {fileID: 2034387440}
 --- !u!1001 &175075524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15258,6 +15243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1504018452}
+  - component: {fileID: 1504018453}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -15280,6 +15266,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1504018453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504018451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8906cc7f269388f4cb0a58fb8a7ea9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - key: 110
+    ui: {fileID: 2034387440}
 --- !u!1001 &1534752105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15406,9 +15407,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6543180035385229415, guid: 347cd8e6ff9896040aa139bd403b53bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 162199341}
-    - targetCorrespondingSourceObject: {fileID: 6543180035385229415, guid: 347cd8e6ff9896040aa139bd403b53bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 162199344}
   m_SourcePrefab: {fileID: 100100000, guid: 347cd8e6ff9896040aa139bd403b53bd, type: 3}
 --- !u!1 &1562400229
 GameObject:
@@ -21978,6 +21976,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 653216870308411531, guid: 6d4573ca33aa92a48b769ffd04b694f0, type: 3}
+      propertyPath: m_Constraint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 653216870308411531, guid: 6d4573ca33aa92a48b769ffd04b694f0, type: 3}
+      propertyPath: m_ConstraintCount
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 708830670501164258, guid: 6d4573ca33aa92a48b769ffd04b694f0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -23801,6 +23807,10 @@ PrefabInstance:
     - target: {fileID: 2978946513656653559, guid: 6d4573ca33aa92a48b769ffd04b694f0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2981041442465541681, guid: 6d4573ca33aa92a48b769ffd04b694f0, type: 3}
+      propertyPath: m_Name
+      value: ChosenFlawsSlotGrid
       objectReference: {fileID: 0}
     - target: {fileID: 2987373642296516103, guid: 6d4573ca33aa92a48b769ffd04b694f0, type: 3}
       propertyPath: m_AnchorMax.y
@@ -26781,6 +26791,10 @@ PrefabInstance:
     - target: {fileID: 6562128723097535081, guid: 6d4573ca33aa92a48b769ffd04b694f0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623588654198954795, guid: 6d4573ca33aa92a48b769ffd04b694f0, type: 3}
+      propertyPath: m_Name
+      value: ChosenFlawsText
       objectReference: {fileID: 0}
     - target: {fileID: 6642122899306318264, guid: 6d4573ca33aa92a48b769ffd04b694f0, type: 3}
       propertyPath: m_AnchorMax.y
