@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7535538121032321668}
   - component: {fileID: 5050484068410044919}
   m_Layer: 5
-  m_Name: ChosenFlawsText
+  m_Name: InventoryText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6333,7 +6333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210365459225101968, guid: 33d2694e8d9d17541b670f097ffc5fb8, type: 3}
       propertyPath: m_Name
-      value: ChosenFlawsSlotGrid
+      value: InventorySlotGrid
       objectReference: {fileID: 0}
     - target: {fileID: 8210365459225101968, guid: 33d2694e8d9d17541b670f097ffc5fb8, type: 3}
       propertyPath: m_IsActive
