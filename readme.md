@@ -102,7 +102,7 @@ Resources/
 │   │   ├── x2_CurDefault.png           # 游戏地图页面 鼠标光标图片
 │   │   ├── x2…….png                    # 其他鼠标光标图片
 │   │
-│   ├── Iteams/                         # 游戏内物料
+│   ├── Items/                          # 游戏内物料
 │   │   ├── CharLook /                  # 人物服饰外观 (Character Costume Look)
 │   │   │   ├── CreItm_0_Hat/           # 头部装备 (Costume Item Hat)
 │   │   │   │   ├── Hat/                # 头部
