@@ -49,9 +49,6 @@ public class ItemData : ScriptableObject
     [Tooltip("图标宽度")]
     public int iconWidth = 1;
 
-    [Tooltip("图标位置")]
-    public iconLoc iconLoc = new();
-
 
 
     // ───────────────────────────────────────────────
@@ -159,13 +156,6 @@ public class ItemData : ScriptableObject
 
 
 
-}
-
-[System.Serializable]
-public class iconLoc
-{
-    public int x, y;        // 位置
-    public int rotate = 0;  // 旋转
 }
 
 [System.Serializable]
